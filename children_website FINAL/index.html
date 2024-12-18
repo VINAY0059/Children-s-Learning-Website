@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Adventure - Fun Education for Kids!</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Learning<br> Adventure! 🎓</h1>
+    </header>
+    <nav class="main-nav">
+            <a href="index.html" class="active"> Home </a>
+            <a href="aboutUs.html"> About Us </a>
+            <a href="contact.html"> Contact </a>
+            <a href="login.html"><button class="login-btn">Login 👤</button></a>
+    </nav>
+   
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="hero111">
+            <div class="hero-content">
+                <p>Where every child's journey to knowledge becomes an exciting adventure!</p>
+                <div class="hero-buttons">
+                    <a href="startlearning.html"><button class="start-btn">Start Learning 🚀</button></a>
+                    <a href="watchDemo.html"><button class="demo-btn">Watch Demo 🎥</button></a>
+                    
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="kidslearning.avif" alt="Kids Learning" id="heroImage" >
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Choose Learning Adventure? ✨</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Interactive Learning</h3>
+                    <p>Fun games and activities that make learning enjoyable</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your child's learning journey</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌈</div>
+                    <h3>Safe Environment</h3>
+                    <p>Kid-friendly interface with parental controls</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Rewards System</h3>
+                    <p>Earn badges and certificates while learning</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Games Section -->
+        <section class="games">
+            <h2>Start Learning Now! 🎯</h2>
+            <div class="games-grid">
+                <div class="game-card math">
+                    <div class="game-icon">🔢</div>
+                    <h3>Math Adventures</h3>
+                    <p>Fun with numbers and calculations</p>
+                    <a href="mathAdventures.html"><button class="play-btn" data-game="math">Play Now</button></a>
+            
+                </div>
+
+                <div class="game-card colors">
+                    <div class="game-icon">🎨</div>
+                    <h3>Color Quest</h3>
+                    <p>Learn colors through exciting activities</p>
+                    <a href="colorGame.html"><button class="play-btn" data-game="colors">Play Now</button></a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>Made with ❤️ for young learners!</p>
+            <p>&copy; 2024 Learning Adventure. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/utils/animations.js"></script>
+    <script src="js/utils/gameLoader.js"></script>
+    <script src="js/components/hero.js"></script>
+    <script src="js/components/games.js"></script>
+</body>
+</html>

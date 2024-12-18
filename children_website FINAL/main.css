@@ -1,0 +1,58 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+header{
+    background-color: aqua;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+nav{
+    background-color: #ff6b6b;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+body {
+    background-color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: #ff6b6b;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #666;
+}
+
+.main-footer p {
+    margin: 5px 0;
+}

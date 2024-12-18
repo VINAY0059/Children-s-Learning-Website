@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Learning for Kids!</title>
+    <link rel="stylesheet" href="maingame.css">
+    <link rel="stylesheet" href="gamesgame.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Learning Adventure 🌟</h1>
+            <nav>
+                <button class="nav-btn active" data-section="math">Math Game</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Math Section -->
+            <section id="math" class="section active">
+                <h2>Fun with Numbers! 🔢</h2>
+                <div class="game-container">
+                    <div id="math-question"></div>
+                    <input type="number" id="math-answer" placeholder="Type your answer">
+                    <button onclick="checkMathAnswer()">Check Answer</button>
+                    <div id="math-result"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for young learners!</p>
+        </footer>
+    </div>
+
+    <script src="js/utils/feedback.js"></script>
+    <script src="js/utils/randomizer.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/games/mathGame/mathLogic.js"></script>
+    <script src="js/games/mathGame/mathUI.js"></script>
+</body>
+</html>

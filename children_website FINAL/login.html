@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Learning Adventure! 🌟</title>
+    <link rel="stylesheet" href="mainlogin.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="animationslogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <!-- Login Form -->
+            <div class="auth-form-container" id="loginForm">
+                <div class="welcome-header">
+                    <h1>Welcome Back! 👋</h1>
+                    <p>Ready for another learning adventure?</p>
+                </div>
+                
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="loginUsername">
+                            <span class="icon">👤</span> Username
+                        </label>
+                        <input type="text" id="loginUsername" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword">
+                            <span class="icon">🔑</span> Password
+                        </label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">
+                        Let's Go! 🚀
+                    </button>
+                </form>
+                
+                <p class="switch-form">
+                    New here? 
+                    <a href="#" onclick="switchForm('register')">Join the fun!</a>
+                </p>
+            </div>
+
+            <!-- Register Form -->
+            <div class="auth-form-container hidden" id="registerForm">
+                <div class="welcome-header">
+                    <h1>Join the Fun! 🎉</h1>
+                    <p>Create your magical learning account</p>
+                </div>
+                
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="registerUsername">
+                            <span class="icon">👤</span> Choose a Username
+                        </label>
+                        <input type="text" id="registerUsername" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerPassword">
+                            <span class="icon">🔑</span> Create a Password
+                        </label>
+                        <input type="password" id="registerPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerAge">
+                            <span class="icon">🎂</span> Your Age
+                        </label>
+                        <input type="number" id="registerAge" min="4" max="12" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">
+                        Start Learning! 🎨
+                    </button>
+                </form>
+                
+                <p class="switch-form">
+                    Already have an account? 
+                    <a href="#" onclick="switchForm('login')">Login here!</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Floating Background Elements -->
+        <div class="floating-elements">
+            <span class="float-item">🌟</span>
+            <span class="float-item">📚</span>
+            <span class="float-item">🎨</span>
+            <span class="float-item">🔢</span>
+            <span class="float-item">🎮</span>
+            <span class="float-item">🌈</span>
+        </div>
+    </div>
+
+    <script src="js/auth/formSwitch.js"></script>
+    <script src="js/auth/validation.js"></script>
+</body>
+</html>
